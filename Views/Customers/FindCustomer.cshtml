@@ -1,0 +1,17 @@
+﻿@model ASPLabb4.Models.Customer
+@{
+	ViewData["Title"] = "FindCustomer";
+}
+<div class="row">
+	<div class="col-md-4">
+		<form asp-action="FindCustomer">
+			<div class="form-group">
+				<label class="control-label">Select customer</label>
+				<select class="form-control" name="id" asp-items="ViewBag.CustomerId"></select>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary">Search</button>
+			</div>
+		</form>
+	</div>
+</div>
